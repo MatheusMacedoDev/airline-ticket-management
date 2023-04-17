@@ -1,0 +1,15 @@
+C:\Users\51116869837\Desktop\Study Projects\Backend\AirlineTicketManagement\bin\Debug\net7.0\AirlineTicketManagement.exe
+C:\Users\51116869837\Desktop\Study Projects\Backend\AirlineTicketManagement\bin\Debug\net7.0\AirlineTicketManagement.deps.json
+C:\Users\51116869837\Desktop\Study Projects\Backend\AirlineTicketManagement\bin\Debug\net7.0\AirlineTicketManagement.runtimeconfig.json
+C:\Users\51116869837\Desktop\Study Projects\Backend\AirlineTicketManagement\bin\Debug\net7.0\AirlineTicketManagement.dll
+C:\Users\51116869837\Desktop\Study Projects\Backend\AirlineTicketManagement\bin\Debug\net7.0\AirlineTicketManagement.pdb
+C:\Users\51116869837\Desktop\Study Projects\Backend\AirlineTicketManagement\obj\Debug\net7.0\AirlineTicketManagement.csproj.AssemblyReference.cache
+C:\Users\51116869837\Desktop\Study Projects\Backend\AirlineTicketManagement\obj\Debug\net7.0\AirlineTicketManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\51116869837\Desktop\Study Projects\Backend\AirlineTicketManagement\obj\Debug\net7.0\AirlineTicketManagement.AssemblyInfoInputs.cache
+C:\Users\51116869837\Desktop\Study Projects\Backend\AirlineTicketManagement\obj\Debug\net7.0\AirlineTicketManagement.AssemblyInfo.cs
+C:\Users\51116869837\Desktop\Study Projects\Backend\AirlineTicketManagement\obj\Debug\net7.0\AirlineTicketManagement.csproj.CoreCompileInputs.cache
+C:\Users\51116869837\Desktop\Study Projects\Backend\AirlineTicketManagement\obj\Debug\net7.0\AirlineTicketManagement.dll
+C:\Users\51116869837\Desktop\Study Projects\Backend\AirlineTicketManagement\obj\Debug\net7.0\refint\AirlineTicketManagement.dll
+C:\Users\51116869837\Desktop\Study Projects\Backend\AirlineTicketManagement\obj\Debug\net7.0\AirlineTicketManagement.pdb
+C:\Users\51116869837\Desktop\Study Projects\Backend\AirlineTicketManagement\obj\Debug\net7.0\AirlineTicketManagement.genruntimeconfig.cache
+C:\Users\51116869837\Desktop\Study Projects\Backend\AirlineTicketManagement\obj\Debug\net7.0\ref\AirlineTicketManagement.dll
