@@ -9,7 +9,7 @@ DateTime[] passengerFlightDate = new DateTime[PASSENGERS_QUANTITY];
 
 string password;
 
-int menuOption = 0;
+int menuOption = 3;
 
 
 // Login
@@ -22,17 +22,34 @@ do
 }
 while (!login(password));
 
-// Options
+Console.Clear();
 
-switch (menuOption) 
+// Options
+while(menuOption != 0) 
 {
-	case 1:
-		break;
-	case 2:
-		break;
-	case 0:
-		break;
+	Console.WriteLine($"Digite uma das opções abaixo");
+	Console.WriteLine($"1 - Cadastrar passagem");
+	Console.WriteLine($"2 - Listar Passagens");
+	Console.WriteLine($"0 - Sair");
+	Console.Write($"=> ");
 	
+	
+	menuOption = int.Parse(Console.ReadLine());
+		
+	switch (menuOption) 
+	{
+		case 1:
+			registerTicket();
+			break;
+		case 2:
+			listTicket();
+			break;
+		case 0:
+			break;
+		default:
+		 	invalidOption();
+			break;
+	}
 }
 
 
@@ -67,4 +84,71 @@ static void breakPoint()
 	Console.WriteLine($"Precione qualquer botão para continuar...");
 	Console.ReadKey();
 	Console.Clear();
+}
+
+static void invalidOption() 
+{
+	Console.Clear();
+	Console.WriteLine($"Opção inválida");
+	breakPoint();
+}
+
+void registerTicket() 
+{
+	Console.Clear();
+	Console.WriteLine(@$"
+---------------------------------------------
+|            Cadastrar passagem             |
+---------------------------------------------
+	");
+	
+	Console.Write($"Digite o nome do passageiro: ");
+	passengerNames[passengerCurrentIndex] = Console.ReadLine();
+	
+	Console.Write($"Digite a origem: ");
+	passengerOrigins[passengerCurrentIndex] = Console.ReadLine();
+	
+	Console.Write($"Digite o destino: ");
+	passengerDestinations[passengerCurrentIndex] = Console.ReadLine();
+	
+	Console.Write($"Digite a data da viagem: ");
+	passengerFlightDate[passengerCurrentIndex] = DateTime.Parse(Console.ReadLine());
+	
+	Console.Clear();
+	Console.WriteLine($"Passagem cadastrada com sucesso");
+	passengerCurrentIndex++;
+	breakPoint();
+	
+	Console.Write($"Deseja cadastrar mais uma passagem (S/N): ");
+	char continueRegistration = char.Parse(Console.ReadLine().ToLower());
+	
+	if (continueRegistration == 's') 
+	{
+		registerTicket();
+	}
+	
+	Console.Clear();
+	
+}
+
+void listTicket() 
+{
+	Console.Clear();
+	Console.WriteLine(@$"
+---------------------------------------------
+|            Lista de passagens             |
+---------------------------------------------
+	");
+	
+	for (int i = 0; i < passengerCurrentIndex; i++) 
+	{
+		Console.WriteLine($"Passagem #{i + 1}");
+		Console.WriteLine($"Nome do passageiro: {passengerNames[i]}");
+		Console.WriteLine($"Origem: {passengerOrigins[i]}");
+		Console.WriteLine($"Destino: {passengerDestinations[i]}");
+		Console.WriteLine($"Data: {passengerFlightDate[i].ToString("dd/MM/yyyy")}");
+		Console.WriteLine($"");
+	}
+	
+	breakPoint();
 }
